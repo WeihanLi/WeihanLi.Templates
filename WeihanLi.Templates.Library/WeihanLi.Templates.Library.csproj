@@ -2,10 +2,13 @@
 
   <PropertyGroup>
     <PackageId>WeihanLi.Templates.Library</PackageId>
-    <PackageTitle>WeihanLi.Templates.Library</PackageTitle>
+    <Title>WeihanLi.Templates.Library</Title>
     <Authors>WeihanLi</Authors>
     <TargetFramework>netstandard1.0</TargetFramework>    
-    <Description>dotnet new weihanli:lib, WeihanLi dotnet library template</Description>    
+    <Description>dotnet new weihanli:lib, WeihanLi dotnet library template</Description>
+    <PackageTags>dotnet weihanli library template</PackageTags>
+    <PackageSummary>dotnet new weihanli:lib, WeihanLi dotnet library template</PackageSummary>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <IncludeBuildOutput>False</IncludeBuildOutput>
     <IncludeSource>False</IncludeSource>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -16,15 +19,16 @@
     <PackageType>Template</PackageType>
     <PackageIconUrl>https://avatars3.githubusercontent.com/u/7604648</PackageIconUrl>
     <PackageProjectUrl>https://github.com/WeihanLi/WeihanLi.Templates/WeihanLi.Templates.Library</PackageProjectUrl>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
       Init
-    </PackageReleaseNotes>    
+    </PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/WeihanLi/WeihanLi.Templates</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <VersionPrefix>1.0.0</VersionPrefix>
     <VersionSuffix Condition="'$(Configuration)'=='DEBUG'">preview-$([System.DateTime]::Now.ToString("yyyyMMdd-HHmmss"))</VersionSuffix>
+    <Authors>WeihanLi</Authors>
+    <Copyright>Copyright 2018-2019 (c) WeihanLi</Copyright>
   </PropertyGroup>
 
  <ItemGroup>
