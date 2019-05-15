@@ -1,0 +1,23 @@
+<Project>
+  <Import Project="analyzer.props" />
+  <Import Project="copyright.props" />
+  <Import Project="repo.props" />
+  <Import Project="sign.props" />
+  <Import Project="version.props" />
+  <PropertyGroup>
+    <PackageId>TLibraryName</PackageId>
+    <Title>TLibraryName</Title>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Description>TLibraryName</Description>
+    <PackageTags></PackageTags>
+    <PackageSummary>TLibraryName</PackageSummary>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      Init
+    </PackageReleaseNotes>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/7604648</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/WeihanLi/TLibraryName/tree/dev/src/TLibraryName</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+</Project>

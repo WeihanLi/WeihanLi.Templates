@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>WeihanLi.Templates.Library</PackageId>
+    <PackageTitle>WeihanLi.Templates.Library</PackageTitle>
+    <TargetFramework>netstandard2.0</TargetFramework>    
+    <Description>dotnet new weihanli:lib, WeihanLi dotnet library template</Description>    
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeSource>False</IncludeSource>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputPath>$(TemplatesDir)</OutputPath>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <IsPackable>true</IsPackable>
+    <NoWarn>2008;NU5105</NoWarn>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <PackageType>Template</PackageType>
+    <PackageProjectUrl>https://github.com/WeihanLi/WeihanLi.Templates</PackageProjectUrl>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <VersionSuffix>preview-$([System.DateTime]::Now.ToString("yyyyMMdd-HHmmss"))</VersionSuffix>
+  </PropertyGroup>
+
+ <ItemGroup>
+    <Compile Remove="content\**" />
+    <None Include="content\**" Exclude="**\obj\*;**\bin\*" Pack="true" PackagePath="content" />
+  </ItemGroup>
+</Project>
