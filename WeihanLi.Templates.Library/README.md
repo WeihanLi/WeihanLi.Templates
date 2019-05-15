@@ -18,7 +18,7 @@ dotnet new -i WeihanLi.Templates.Library
 
 ## Use
 
-- 默认配置生成
+- 默认配置生成项目
 
   ``` bash
   dotnet new weihanli-lib -n WeihanLi.Web.Extensions
