@@ -14,7 +14,15 @@
     <NoWarn>2008;NU5105</NoWarn>
     <NoPackageAnalysis>true</NoPackageAnalysis>
     <PackageType>Template</PackageType>
-    <PackageProjectUrl>https://github.com/WeihanLi/WeihanLi.Templates</PackageProjectUrl>
+    <PackageIconUrl>https://avatars3.githubusercontent.com/u/7604648</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/WeihanLi/WeihanLi.Templates/WeihanLi.Templates.Library</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      Init
+    </PackageReleaseNotes>    
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/WeihanLi/WeihanLi.Templates</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <VersionPrefix>1.0.0</VersionPrefix>
     <VersionSuffix Condition="'$(Configuration)'=='DEBUG'">preview-$([System.DateTime]::Now.ToString("yyyyMMdd-HHmmss"))</VersionSuffix>
   </PropertyGroup>
