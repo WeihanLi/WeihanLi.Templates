@@ -1,7 +1,7 @@
 {
     "$schema": "http://json.schemastore.org/template",
     "author": "WeihanLi",
-    "classifications": [ "Common","Library" ], 
+    "classifications": [ "Common","Library", "WeihanLi" ], 
     "name": "WeihanLi Class Library Template",    
     "shortName": "weihanli-lib",
     "description": "A project for creating a WeihanLi class library that targets .NET Standard",
