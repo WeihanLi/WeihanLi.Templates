@@ -286,3 +286,9 @@ build/tools/**
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+# docfx
+_site
+/**/DROP/
+/**/TEMP/
+docs/api/*
