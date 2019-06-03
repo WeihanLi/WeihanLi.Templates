@@ -1,5 +1,7 @@
 - name: Home
   href: README.md
 - name: API Documentation
-  href: docs/api
+  href: docs/api/TLibraryName.yml
+- name: Release Notes
+  href: docs/ReleaseNotes.md
 
