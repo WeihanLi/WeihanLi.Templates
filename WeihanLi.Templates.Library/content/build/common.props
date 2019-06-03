@@ -1,4 +1,5 @@
 <Project>
+  <Import Project="./document.props" />
   <PropertyGroup>
     <PackageId>TLibraryName</PackageId>
     <Title>TLibraryName</Title>
@@ -9,7 +10,7 @@
     <PackageSummary>TLibraryName</PackageSummary>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
-      Init
+      https://github.com/WeihanLi/TLibraryName/tree/dev/docs/ReleaseNotes.md
     </PackageReleaseNotes>
     <PackageIconUrl>https://avatars3.githubusercontent.com/u/7604648</PackageIconUrl>
     <PackageProjectUrl>https://github.com/WeihanLi/TLibraryName/tree/dev/src/TLibraryName</PackageProjectUrl>
