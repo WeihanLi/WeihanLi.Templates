@@ -2,11 +2,10 @@
     "$schema": "http://json.schemastore.org/template",
     "author": "WeihanLi",
     "classifications": [ "Common","Library", "WeihanLi" ], 
-    "name": "WeihanLi Class Library Template",    
+    "name": "WeihanLi Class Library",    
     "shortName": "weihanli-lib",
     "description": "A project for creating a WeihanLi class library that targets .NET Standard",
     "identity": "WeihanLi.Templates.Library",
-    "groupIdentity": "WeihanLi",
     "defaultName": "WeihanLi.ClassLibrary1",
     "tags": {
       "language": "C#",
