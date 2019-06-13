@@ -1,0 +1,41 @@
+{
+  "name": "TProjectName",
+  "version": "1.0.0",
+  "description": "qa crawler",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "yarn && tsc",
+    "dev": "yarn build && nodemon --watch src src/index.ts",
+    "start": "yarn build && node dist/index.js",
+    "test": "yarn build && node dist/test.js"
+  },
+  "author": "WeihanLi",
+  "license": "ISC",
+  "dependencies": {
+    "async-lock": "^1.2.0",
+    "config": "^3.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "guid-typescript": "^1.0.9",
+    "log4js": "^4.1.0",
+    "moment": "^2.24.0",
+    "mssql": "^5.1.0",
+    "puppeteer": "^1.9.0",
+    "sleepjs": "^3.0.0",
+    "swagger-ui-express": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/async-lock": "^1.1.1",
+    "@types/config": "^0.0.34",
+    "@types/cors": "^2.8.5",
+    "@types/express": "^4.16.1",
+    "@types/mssql": "^4.0.13",
+    "@types/node": "^11.13.8",
+    "@types/puppeteer": "^1.12.3",
+    "@types/swagger-ui-express": "^3.0.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.2.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.5"
+  }
+}

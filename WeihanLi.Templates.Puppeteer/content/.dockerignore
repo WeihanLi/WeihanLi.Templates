@@ -1,0 +1,10 @@
+*.md
+.gitignore
+.git
+sqlScripts
+.vscode
+logs
+*.log
+docker-compose.yml
+node_modules
+sqlScripts
