@@ -40,6 +40,20 @@ Task("clean")
       {
          DeleteDirectory(artifacts, deleteSetting);
       }
+      var binDirs = new string[]
+      {
+         "./WeihanLi.Templates.Library/content/src/TLibraryName/bin",
+         "./WeihanLi.Templates.Library/content/src/TLibraryName/obj",
+         "./WeihanLi.Templates.Library/content/test/TLibraryName.UnitTest/bin",
+         "./WeihanLi.Templates.Library/content/test/TLibraryName.UnitTest/obj",
+      };
+      foreach (var dir in binDirs)
+      {
+         if (DirectoryExists(dir))
+         {
+            DeleteDirectory(dir, deleteSetting);
+         }        
+      }      
     });
 
 Task("pack")
