@@ -4,7 +4,6 @@
     <PackageId>TLibraryName</PackageId>
     <Title>TLibraryName</Title>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
     <Description>TLibraryName</Description>
     <PackageTags></PackageTags>
     <PackageSummary>TLibraryName</PackageSummary>

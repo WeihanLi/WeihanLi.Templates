@@ -11,8 +11,13 @@ var packProjects = GetFiles("./src/**/*.csproj");
 var testProjects  = GetFiles("./test/**/*.csproj");
 
 var artifacts = "./artifacts/packages";
-var isWindowsAgent = (EnvironmentVariable("Agent_OS") ?? "Windows_NT") == "Windows_NT";
 var branchName = EnvironmentVariable("BUILD_SOURCEBRANCHNAME") ?? "local";
+
+void PrintBuildInfo(ICakeContext context){
+   Information($@"branch:{branchName}, agentOs={EnvironmentVariable("Agent_OS")},Platform: {context.Environment.Platform.Family}, IsUnix: {context.Environment.Platform.IsUnix()}
+   BuildID:{EnvironmentVariable("BUILD_BUILDID")},BuildNumber:{EnvironmentVariable("BUILD_BUILDNUMBER")},BuildReason:{EnvironmentVariable("BUILD_REASON")}
+   ");
+}
 
 ///////////////////////////////////////////////////////////////////////////////
 // SETUP / TEARDOWN
@@ -22,7 +27,7 @@ Setup(ctx =>
 {
    // Executed BEFORE the first task.
    Information("Running tasks...");
-   PrintBuildInfo();
+   PrintBuildInfo(ctx);
 });
 
 Teardown(ctx =>
@@ -94,7 +99,7 @@ Task("test")
 Task("pack")
     .Description("Pack package")
     .IsDependentOn("test")
-    .Does(() =>
+    .Does((ctx) =>
     {
       var settings = new DotNetCorePackSettings
       {
@@ -111,11 +116,12 @@ Task("pack")
       {
          DotNetCorePack(project.FullPath, settings);
       }
-      PublishArtifacts();
+      PublishArtifacts(ctx);
     });
 
-bool PublishArtifacts(){
-   if(!isWindowsAgent){
+bool PublishArtifacts(context){
+   if(context.Environment.Platform.IsUnix())
+   {
       return false;
    }
    if(branchName == "master" || branchName == "preview")
@@ -133,12 +139,6 @@ bool PublishArtifacts(){
       return true;
    }
    return false;
-}
-
-void PrintBuildInfo(){
-   Information($@"branch:{branchName}, agentOs={EnvironmentVariable("Agent_OS")}
-   BuildID:{EnvironmentVariable("BUILD_BUILDID")},BuildNumber:{EnvironmentVariable("BUILD_BUILDNUMBER")},BuildReason:{EnvironmentVariable("BUILD_REASON")}
-   ");
 }
 
 Task("Default")

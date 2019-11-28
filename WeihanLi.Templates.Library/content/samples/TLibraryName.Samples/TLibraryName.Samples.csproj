@@ -5,7 +5,7 @@
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="WeihanLi.Common.Logging.Log4Net" Version="1.0.17" />
+    <PackageReference Include="WeihanLi.Common.Logging.Serilog" Version="1.0.24.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\TLibraryName\TLibraryName.csproj" />
