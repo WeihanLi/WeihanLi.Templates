@@ -40,6 +40,16 @@ Task("clean")
       {
          DeleteDirectory(artifacts, deleteSetting);
       }
+      var dirs = GetDirectories("*/**/bin");
+      foreach(var dir in dirs)
+      {
+         DeleteDirectory(dir, deleteSetting);
+      }
+      dirs = GetDirectories("*/**/obj");
+      foreach(var dir in dirs)
+      {
+         DeleteDirectory(dir, deleteSetting);
+      }
     });
 
 Task("pack")
