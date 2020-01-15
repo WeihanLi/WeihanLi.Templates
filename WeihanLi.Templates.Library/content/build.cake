@@ -86,8 +86,9 @@ Task("test")
     .IsDependentOn("build")
     .Does(() =>
     {
-      var testSettings = new DotNetCoreTestSettings{
-         NoRestore = true,
+      var testSettings = new DotNetCoreTestSettings
+      {
+         NoRestore = false,
          Configuration = configuration
       };
       foreach(var project in testProjects)
