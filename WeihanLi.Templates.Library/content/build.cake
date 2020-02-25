@@ -128,7 +128,7 @@ bool PublishArtifacts(ICakeContext context)
    {
       return false;
    }
-   if(branchName == "master" || branchName == "preview" || string.IsNullOrEmpty(apiKey))
+   if(branchName == "master" || branchName == "preview" || !string.IsNullOrEmpty(apiKey))
    {
       var pushSetting =new DotNetCoreNuGetPushSettings
       {
