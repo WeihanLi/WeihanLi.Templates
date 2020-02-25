@@ -1,0 +1,13 @@
+<Project>
+  <Import Project="./document.props" />
+  <PropertyGroup>
+    <PackageIcon>icon.jpg</PackageIcon>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>
+      https://github.com/WeihanLi/TLibraryName/tree/dev/docs/ReleaseNotes.md
+    </PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)icon.jpg" Pack="true" PackagePath=""/>
+  </ItemGroup>
+</Project>

@@ -1,5 +1,6 @@
 <Project>
   <Import Project="./build/sign.props" />
+  <Import Condition="'$(IsPackable)'=='true'" Project="./build/package.props" />
 
   <PropertyGroup>
 		<VersionMajor>1</VersionMajor>

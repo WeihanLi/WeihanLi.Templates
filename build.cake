@@ -4,6 +4,8 @@
 
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Debug");
+var stable = Argument("stable", "false");
+
 var nuspecFiles = GetFiles("./**/*.nuspec");
 var artifacts = "./artifacts";
 
@@ -66,7 +68,7 @@ Task("pack")
             { "Configuration", configuration }
          }
       };
-      if(configuration == "Debug"){
+      if(configuration == "Debug" && stable != "true"){
          nuGetPackSettings.Suffix = $"preview-{DateTime.UtcNow:yyyyMMdd-HHmmss}";
       }
       NuGetPack(nuspecFiles, nuGetPackSettings);

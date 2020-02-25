@@ -1,17 +1,15 @@
 <Project>
-  <Import Project="./document.props" />
   <PropertyGroup>
     <PackageId>TLibraryName</PackageId>
     <Title>TLibraryName</Title>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Description>TLibraryName</Description>
-    <PackageTags></PackageTags>
+    <PackageTags>weihanli</PackageTags>
     <PackageSummary>TLibraryName</PackageSummary>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReleaseNotes>
       https://github.com/WeihanLi/TLibraryName/tree/dev/docs/ReleaseNotes.md
     </PackageReleaseNotes>
-    <PackageIconUrl>https://avatars3.githubusercontent.com/u/7604648</PackageIconUrl>
     <PackageProjectUrl>https://github.com/WeihanLi/TLibraryName/tree/dev/src/TLibraryName</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
