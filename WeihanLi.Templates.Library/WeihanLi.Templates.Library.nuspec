@@ -4,7 +4,7 @@
     <id>WeihanLi.Templates.Library</id>
     <version>1.0.0</version>
     <title>WeihanLi.Templates.Library</title>
-    <description>dotnet new weihanli:lib, WeihanLi dotnet library template</description>
+    <description>dotnet new weihanli-lib, WeihanLi dotnet class library template</description>
     <authors>WeihanLi</authors>
     <owners>WeihanLi</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
