@@ -1,5 +1,6 @@
 <Project>
-  <Import Project="./document.props" />
+  <Import Project="document.props" />
+  <Import Project="sign.props" />
   <PropertyGroup>
     <PackageIcon>icon.jpg</PackageIcon>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
