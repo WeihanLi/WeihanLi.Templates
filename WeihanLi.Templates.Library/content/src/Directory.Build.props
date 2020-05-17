@@ -1,4 +1,5 @@
 <Project>
+  <Import Project="../build/package.props" />
   <PropertyGroup>
 		<IsPackable>true</IsPackable>
 	</PropertyGroup>

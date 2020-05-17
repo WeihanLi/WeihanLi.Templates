@@ -1,5 +1,4 @@
 <Project>
-  <Import Project="package.props" />
   <PropertyGroup>
     <PackageId>TLibraryName</PackageId>
     <Title>TLibraryName</Title>
