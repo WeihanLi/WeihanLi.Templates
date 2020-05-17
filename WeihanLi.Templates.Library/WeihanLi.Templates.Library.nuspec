@@ -13,7 +13,7 @@
     <iconUrl>https://avatars3.githubusercontent.com/u/7604648</iconUrl>
     <repository type="git" url="https://github.com/WeihanLi/WeihanLi.Templates" />    
     <releaseNotes>https://github.com/WeihanLi/WeihanLi.Templates/blob/master/WeihanLi.Templates.Library/ReleaseNotes.md</releaseNotes>
-    <copyright>Copyright 2018-2019 (c) WeihanLi</copyright>
+    <copyright>Copyright 2018-2020 (c) WeihanLi</copyright>
     <tags>dotnet weihanli library template</tags>
     <packageTypes>
       <packageType name="Template" />
