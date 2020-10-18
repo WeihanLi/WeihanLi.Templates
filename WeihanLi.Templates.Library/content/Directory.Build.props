@@ -8,7 +8,6 @@
     <VersionPrefix Condition="'$(VersionRevision)'!='0'">$(VersionMajor).$(VersionMinor).$(VersionPatch).$(VersionRevision)</VersionPrefix>
 		<VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)</VersionPrefix>
 		<VersionSuffix Condition="'$(Configuration)'=='DEBUG'">preview</VersionSuffix>
-    <InformationalVersion>$(PackageVersion)</InformationalVersion>
 	</PropertyGroup>
   
   <PropertyGroup>

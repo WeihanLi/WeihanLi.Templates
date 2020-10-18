@@ -292,3 +292,6 @@ _site
 /**/DROP/
 /**/TEMP/
 docs/api/*
+
+# vscode
+.vscode
